@@ -24,6 +24,11 @@ body{
     margin:0px;
 }
 
+.float-bottom{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
 
 /* Flexbox */
 
@@ -64,6 +69,10 @@ dd{
 
 /* Font Styles */
 
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .adverticing {
     /*word-wrap: break-word;*/
     /*overflow:auto;*/
@@ -74,10 +83,6 @@ dd{
 
 .large-font{
     font-size: 2rem;
-}
-
-.small-font{
-    font-size: 11px;
 }
 
 /* Decorations */
@@ -102,3 +107,41 @@ dd{
 .pink{
     background-color: hotpink;
 }
+
+/* CSS Illustration and animation */
+#svg5{
+    /*height: 150px;*/
+    /*animation-name: background;
+    animation-duration: 4s; 
+    animation-iteration-count: infinite;*/
+    /*animation: background 4s infinite;*/
+    padding: 10px;
+}
+
+#path1555{
+    /*Eye*/
+    animation: blink-animation 4s steps(5, start) infinite;
+    -webkit-animation: blink-animation 4s steps(3, start) infinite;
+}
+
+@keyframes background { 
+    0% {background-color: hotpink;}
+    25% {background-color: lightsalmon;} 
+    50% {background-color: pink;} 
+    100% {background-color: indigo;} 
+}   
+
+@keyframes blink-animation {
+    0% {fill: hotpink;}
+    25% {fill: lightsalmon;} 
+    50% {fill: pink;} 
+    100% {fill: indigo;} 
+}
+@-webkit-keyframes blink-animation {
+    0% {fill: hotpink;}
+    25% {fill: lightsalmon;} 
+    50% {fill: pink;} 
+    100% {fill: indigo;} 
+}
+
+
