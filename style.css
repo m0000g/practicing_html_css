@@ -1,0 +1,104 @@
+body{
+    background-color: #f8f8f8;
+    font-size: 16px;
+}
+
+/* Layout */
+.container{
+    max-width: 780px;
+    margin: 0 auto;    
+}
+
+.absolute{
+    position: absolute;
+}
+
+.box{
+    padding: 15px;
+    margin: 15px;    
+}
+
+.block_overflow_hidden{
+    display: block; 
+    overflow: hidden;
+    margin:0px;
+}
+
+
+/* Flexbox */
+
+.flex-container{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: white;    
+}
+
+.flex-col-1{
+    flex: 1 60%;
+}
+
+.flex-col-2{
+    flex: 2 40%;
+}
+
+.flex-item-1, .flex-item-2, .flex-item-3{
+    width: 30%;
+}
+
+/* Definitions */
+
+dt{
+    font-weight: bold;
+}
+
+dd{
+    margin: 15px;
+    border-left: 1px solid gray;
+    line-height: 1.5rem;
+    padding-left: 15px;
+    line-height: 1.5em;
+}
+
+/* Font Styles */
+
+.adverticing {
+    /*word-wrap: break-word;*/
+    /*overflow:auto;*/
+    /*word-break: break-all;*/
+    hyphens: manual;
+    overflow-wrap: break-word;
+}
+
+.large-font{
+    font-size: 2rem;
+}
+
+.small-font{
+    font-size: 11px;
+}
+
+/* Decorations */
+
+.border{
+    border: solid 1px black;
+}
+
+/* Colors */
+
+.gray{
+    background-color: #ccc;
+}
+
+.mutted-white{
+    background-color:#f8f8f8;
+}
+
+.yellow{
+    background-color: antiquewhite;
+}
+.pink{
+    background-color: hotpink;
+}
