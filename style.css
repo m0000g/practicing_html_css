@@ -114,6 +114,15 @@ body {
   background-color: hotpink;
 }
 
+/* Behaviour */
+.hide {
+  visibility: hidden;
+}
+
+.remove {
+  display: none;
+}
+
 /* CSS Illustration and animation */
 #svg5 {
   /*height: 150px;*/
