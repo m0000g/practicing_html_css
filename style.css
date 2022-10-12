@@ -18,6 +18,22 @@ body {
   margin: 15px;
 }
 
+.box-data-size {
+  background-color: lightblue;
+  height: 100px;
+  width: calc(100px + attr(data-size));
+}
+
+.box-data-size::after {
+  content: attr(data-icon);
+}
+
+.box-style-size {
+  background-color: pink;
+  height: 100px;
+  width: calc(100px + var(--size));
+}
+
 .block_overflow_hidden {
   display: block;
   overflow: hidden;

@@ -11,6 +11,11 @@
     -->
     <link rel="stylesheet" href="style.css" />
     <title>Document &amp; checking this one out</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon-32x32.png"
+      type="image/x-icon"
+    />
   </head>
 
   <body>
@@ -20,7 +25,7 @@
         <div class="flex-col-1">
           <h2>Cats, evil genious or adorable creatures?</h2>
           <p>Taking over the world, <em>feed me human!.</em></p>
-          <img src="cat.jpg" alt="This is a cat" />
+          <img src="/assets/img/cat.jpg" alt="This is a cat" />
           <dl>
             <dt>Cat</dt>
             <dd>
@@ -170,6 +175,15 @@
               />
             </g>
           </svg>
+          <div class="box-data-size" data-size="100" data-icon="🐈">
+            This box calculates the height using an HTML attribute. Also, it
+            includes the value of one attibute "data-icon" at the end with the
+            CSS property "content".
+          </div>
+          <br />
+          <div class="box-style-size" style="--size: 100px">
+            This box calculates height using CSS variables (CSS properties).
+          </div>
         </div>
         <div class="flex-col-2">
           <div class="adverticing box border">
@@ -191,4 +205,5 @@
       </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
