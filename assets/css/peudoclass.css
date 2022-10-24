@@ -1,0 +1,14 @@
+/* CSS is:Pseudo Class */
+
+:is(.container) h2:hover {
+  transform-origin: top left;
+  transform: scale(1.1);
+}
+
+:is(section, article, aside, nav) h2 {
+  font-size: 2rem;
+}
+
+:is(section, article, aside, nav) p {
+  background-color: lightgray;
+}

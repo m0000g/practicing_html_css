@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/peudoclass.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>06 Input</title>
+  </head>
+  <body>
+    <div id="main" class="container">
+      <h1>HTML, CSS and JS practice</h1>
+      <div class="flex-container">
+        <div class="flex-col-1">
+          <ul class="breadcrump">
+            <li>
+              <a href="index.html">Index</a>
+            </li>
+            <li class="active">Is Pseudo Class</li>
+          </ul>
+
+          <h2>Is Pseudo Class</h2>
+          <p>
+            Incresing the font-size of all the h2 inside elements like: section,
+            article, aside or nav.
+          </p>
+          <pre><code>:is(section, article, aside, nav) h2 {
+            font-size: 2rem;
+          }
+        </code></pre>
+          <p>
+            Changing the background color of all the parragraphs inside elements
+            like: section, article, aside or nav.
+          </p>
+          <pre><code>:is(section, article, aside, nav) p {
+            background-color: lightgray;
+          }
+          
+        </code></pre>
+          <p>
+            Scaling h2 titles if they are inside the .container class on hover.
+          </p>
+          <pre><code>:is(.container) h2:hover {
+            transform: scale(1.1, 1.1);
+          }
+          
+        </code></pre>
+          <hr />
+          <div>
+            <h2>This is an h2 title inside a div</h2>
+            <p>
+              This is a regular parragraph that <b>is not</b> inside any article
+              or aside HTML element.
+            </p>
+          </div>
+          <article>
+            <h2>This is an h2 title inside an article HTML element</h2>
+            <p>
+              This is a regular parragraph inside an <b>article</b> html
+              element.
+            </p>
+          </article>
+          <aside>
+            <h2>This is a h2 title inside an aside HTML element</h2>
+            <p>Regular parragraph inside an <b>aside</b> HTML element.</p>
+          </aside>
+        </div>
+        <div class="flex-col-2">
+          <div id="adverticing"></div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/scripts/add.js"></script>
+  </body>
+</html>
