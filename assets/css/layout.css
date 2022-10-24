@@ -3,7 +3,6 @@ body {
   font-size: 16px;
 }
 
-/* Layout */
 .container {
   max-width: 780px;
   margin: 0 auto;
@@ -46,6 +45,11 @@ body {
   right: 15px;
 }
 
+.regular-container {
+  padding: 15px;
+  background-color: white;
+}
+
 /* Flexbox */
 
 .flex-container {
@@ -85,6 +89,45 @@ dd {
   line-height: 1.5em;
 }
 
+/* Breadcrump */
+
+.breadcrump {
+  padding-left: 5px;
+  display: flex;
+}
+
+.breadcrump li {
+  list-style-type: none;
+}
+
+.breadcrump li:not(:last-child)::after {
+  content: ">";
+}
+
+.breadcrump .active {
+  font-weight: bold;
+}
+
+/* Code Formating */
+
+pre {
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
+    "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+    "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
+    monospace;
+  white-space: pre-wrap;
+  background-color: black;
+  color: white;
+  padding: 1rem 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Forms and Inputs */
+
+.form-element {
+  padding: 0px 0px 15px 0px;
+}
+
 /* Font Styles */
 
 body {
@@ -113,6 +156,10 @@ body {
   border: solid 1px black;
 }
 
+.index li {
+  list-style-type: number;
+}
+
 /* Colors */
 
 .gray {
@@ -128,73 +175,4 @@ body {
 }
 .pink {
   background-color: hotpink;
-}
-
-/* Behaviour */
-.hide {
-  visibility: hidden;
-}
-
-.remove {
-  display: none;
-}
-
-/* CSS Illustration and animation */
-#svg5 {
-  /*height: 150px;*/
-  /*animation-name: background;
-    animation-duration: 4s; 
-    animation-iteration-count: infinite;*/
-  /*animation: background 4s infinite;*/
-  padding: 10px;
-}
-
-#path1555 {
-  /*Eye*/
-  animation: blink-animation 4s steps(5, start) infinite;
-  -webkit-animation: blink-animation 4s steps(3, start) infinite;
-}
-
-@keyframes background {
-  0% {
-    background-color: hotpink;
-  }
-  25% {
-    background-color: lightsalmon;
-  }
-  50% {
-    background-color: pink;
-  }
-  100% {
-    background-color: indigo;
-  }
-}
-
-@keyframes blink-animation {
-  0% {
-    fill: hotpink;
-  }
-  25% {
-    fill: lightsalmon;
-  }
-  50% {
-    fill: pink;
-  }
-  100% {
-    fill: indigo;
-  }
-}
-@-webkit-keyframes blink-animation {
-  0% {
-    fill: hotpink;
-  }
-  25% {
-    fill: lightsalmon;
-  }
-  50% {
-    fill: pink;
-  }
-  100% {
-    fill: indigo;
-  }
 }

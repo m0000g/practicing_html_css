@@ -1,0 +1,8 @@
+/* Behaviour */
+.hide {
+  visibility: hidden;
+}
+
+.remove {
+  display: none;
+}

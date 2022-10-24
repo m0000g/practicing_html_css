@@ -1,8 +1,0 @@
-/*
-Good news everyone! The Large, Small and Dynamic viewport units (lv*, sv*, dv*) are coming to Chrome 108!
-*/
-
-.full-height{
-    background-color: pink;
-    height: 100svh;
-}

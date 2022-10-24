@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/behaviour.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>02 Hidden</title>
+  </head>
+  <body>
+    <div id="main" class="container">
+      <h1>HTML and CSS practice</h1>
+      <div class="flex-container">
+        <div class="flex-col-1">
+          <ul class="breadcrump">
+            <li>
+              <a href="index.html">Index </a>
+            </li>
+            <li class="active">Can you see this?</li>
+          </ul>
+          <h2>Can you see this?</h2>
+          <p>Checking CSS properties</p>
+          <h3>CSS vissibility</h3>
+          <p>
+            It will hide and HTML element, but it doesn't remove it, meaning
+            that the space occupied by the element is being used in the
+            document. <button id="hide">HIDE/SHOW</button>
+          </p>
+          <pre><code>.hide {visibility: hidden;}
+          </code></pre>
+          <p id="parragraph-hide">
+            Hide this parragraph, the space will be there.
+          </p>
+          <h3>CSS display</h3>
+          <p>
+            This will remove the HTML element completelly.
+            <button id="remove">REMOVE/SHOW</button>
+          </p>
+          <pre><code>.remove {display: none;}
+            
+          </code></pre>
+          <p id="parragraph-remove">
+            Remove this div completetly, the space will be removed.
+          </p>
+        </div>
+        <div class="flex-col-2">
+          <div id="adverticing"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const hideThis = document.querySelector("#parragraph-hide");
+    const removeThis = document.querySelector("#parragraph-remove");
+    document.querySelector("#hide").addEventListener("click", function () {
+      hideThis.classList.toggle("hide");
+    });
+
+    document.querySelector("#remove").addEventListener("click", function () {
+      removeThis.classList.toggle("remove");
+    });
+  </script>
+  <script src="assets/scripts/add.js"></script>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/animations.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>04 DOM Manipulation</title>
+  </head>
+  <body>
+    <div id="main" class="container">
+      <h1>HTML and CSS practice</h1>
+      <div class="flex-container">
+        <div class="flex-col-1">
+          <ul class="breadcrump">
+            <li>
+              <a href="index.html">Index </a>
+            </li>
+            <li class="active">DOM Manipulation</li>
+          </ul>
+          <h2>DOM Manipulation</h2>
+          <p>Using get ElementById =><span id="elementbyid"></span></p>
+          <pre>
+const elementbyID = document.getElementById("elementbyid"); 
+            elementbyID.textContent = `Gotcha!`;
+          </pre>
+
+          <p>Using get querySelector =><span class="querySelector"></span></p>
+          <pre>
+const querySelector = document.querySelector(".querySelector");
+            querySelector.textContent = `Also Gotcha!`;</pre
+          >
+          <p>
+            Using get getElementByClassName =><span class="class_name"></span>
+          </p>
+          <pre>
+const getElementByClassName = document.getElementsByClassName("class_name");
+            getElementByClassName[0].textContent = `Re-Gotcha!`;</pre
+          >
+          <p>
+            <span class="capitalize"
+              >capitalize first letter of this string</span
+            >
+            => <span class="result"></span>
+          </p>
+        </div>
+        <div class="flex-col-2">
+          <div id="adverticing"></div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/scripts/dom.js"></script>
+    <script src="assets/scripts/add.js"></script>
+  </body>
+</html>
