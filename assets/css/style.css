@@ -133,6 +133,11 @@ pre {
   font-style: italic;
 }
 
+/* Images */
+.image {
+  width: 100%;
+}
+
 /* Font Styles */
 
 body {
