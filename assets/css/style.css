@@ -136,6 +136,7 @@ pre {
 /* Images */
 .image {
   width: 100%;
+  max-width: 600px;
 }
 
 /* Font Styles */
